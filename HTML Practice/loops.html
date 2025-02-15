@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <script>
+        function loopsDemo()
+        {
+                let students = ["Nitin","Mahek","Rinkal","Dipsa"];
+
+                console.log(students[0]);
+                console.log(students[1]);
+                console.log(students[2]);
+                console.log(students[3]);
+                students.push("Lovepreet");
+                console.log("=====================")
+                for(let i = 0;i <students.length;i++)
+                {
+                    console.log(students[i]);
+                }
+        }
+        function whileLoop()
+        {
+            let students = ["Nitin","Mahek","Rinkal","Dipsa"];
+
+            let i = 0;
+
+            while(i <students.length)
+            {
+                console.log(students[i]);
+                i++;
+            }
+            
+
+        }
+
+        function doWhileDemo()
+        {
+            let students = ["Nitin","Mahek","Rinkal","Dipsa"];
+
+            let i = 0;
+            console.log("==========Do While loop=========")
+            do
+            {
+                console.log(students[i]);
+                i++;
+            }while(i <students.length);
+        }
+        function forEachLoopDemo()
+        {
+            console.log("==========ForEach Loop=========")
+            let students = ["Nitin","Mahek","Rinkal","Dipsa"];
+            students.forEach((i) =>{
+                console.log(i);
+                
+            });
+           
+        }
+
+        function enhanceForLoop()
+        {
+            console.log("==========Enhance For loop=========")
+            let students = ["Nitin","Mahek","Rinkal","Dipsa"];
+           for(let nm of students)
+           {
+                console.log(nm);
+           }
+           
+        }
+
+    </script>
+</head>
+<body>
+    <button name="click" onclick="loopsDemo();">For Loop</button>
+    <button name="click" onclick="whileLoop();">While Loop</button>
+    <button name="click" onclick="doWhileDemo();">Do While Loop</button>
+    <button name="click" onclick="forEachLoopDemo();">For each Loop</button>
+    <button name="click" onclick="enhanceForLoop();">Enhance for  Loop</button>
+</body>
+</html>

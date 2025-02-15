@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script>
+        function ArraysDemo()
+        {
+            let students = ["Mehak","Rinkal","Dipsa"];
+
+            console.log(students[2]);
+            console.log(`Before Adding : ${students}`);
+            students.push("Hardeep");
+            console.log(`After Adding : ${students}`);
+
+            console.log(`Removing : ${students.pop()}`);
+
+            console.log(`After Removing Last Element : ${students}`);
+
+            students.sort();
+            console.log(`After Sorting : ${students}`);
+        }
+    </script>
+</head>
+<body>
+    <button name="click" onclick="ArraysDemo();">Click Me!!</button>
+</body>
+</html>
